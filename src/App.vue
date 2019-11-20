@@ -16,15 +16,15 @@
           </el-menu-item >
           <el-menu-item index="2">
             <i class="el-icon-menu"></i>
-            <span slot="title"><router-link to="/about">招投标管理</router-link></span>
+            <span slot="title"><router-link to="/VolBidManage">招投标管理</router-link></span>
           </el-menu-item>
           <el-menu-item index="3">
             <i class="el-icon-document"></i>
-            <span slot="title">待办列表</span>
+            <span slot="title"><router-link to="/VolBidCommission">待办列表</router-link></span>
           </el-menu-item>
           <el-menu-item index="4">
             <i class="el-icon-setting"></i>
-            <span slot="title">价格复核</span>
+            <span slot="title"><router-link to="/VolBidRecheck">价格复核</router-link></span>
           </el-menu-item>
         </el-menu>
       </div>
@@ -71,8 +71,9 @@ export default {
     min-height: 600px;
   }
   .app-view{
-    width: calc(100% - 200px);
-    height: 100%;
+    width: calc(100% - 220px);
+    height: calc(100% - 20px);
+    padding:10px;
     overflow: auto;
   }
   .app-menu{
